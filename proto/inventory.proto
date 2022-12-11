@@ -5,6 +5,10 @@ service InventoryService {
     rpc SearchProductByID(Payload) returns (ProductResponse) {}
 }
 
+message Payload {
+    int32 id = 1;
+}
+
 message Empty{}
 
 message ProductResponse {
